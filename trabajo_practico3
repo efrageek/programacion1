@@ -67,11 +67,43 @@ def max_de_tres(a, b, c):
 
 def vocal(caracter):
     if caracter == "a" or caracter == "e" or caracter == "i" or caracter == "o" or caracter == "u":
-        print("True")
+        res = "True"
     elif caracter == "A" or caracter == "E" or caracter == "I" or caracter == "O" or caracter == "U":
-        print("True")
+        res = "True"
     else:
-        print("False")
+        res = "False"
+    return res
+
+# Funcion 8
+
+def inversa(cadena):
+    return cadena[::-1]
+
+# funcion 9
+
+def es_palindromo(cadena):
+    cadena_inv = cadena[::-1]
+
+    if cadena == cadena_inv:
+        resul = "True"
+    else:
+        resul = "False"
+
+    return resul
+
+# Funcion 10
+
+def longitud (cadena):
+    for letra in cadena:
+        letra += 1
+    return letra
+
+# funcion 12
+
+def generar_n_caracteres(numero, caracter ):
+    print(f"Te vamos a mostrar '{caracter}' {numero} veces")
+    for i in range(numero):
+        print(caracter, end="")
 
 
 # Programa ejercicio 1
@@ -119,4 +151,43 @@ n3 = float(input("Ingrese el valor dos: "))
 n_mayor_tres = max_de_tres(n1, n2, n3)
 
 print(f"El número mayor es {n_mayor_tres}")
+"""
+
+# Programa ejercicio 7
+"""
+letra = str(input("Por favor, ingresa un caracter: "))
+
+comprobacion = vocal(letra)
+print(comprobacion)
+"""
+# Programa ejercicio 8
+"""
+miCadena = str(input("Ingresa una cadena de texto "))
+
+inversion = inversa(miCadena)
+print(inversion)
+"""
+
+# Programa ejercicio 9
+"""
+string = str(input("Escribe una palabra o frase: "))
+string_inv = es_palindromo(string)
+print(string_inv)
+"""
+
+# programa 10
+"""
+Con errores
+cadena = input("Ingresa una palabra o cadena")
+
+long = longitud(cadena)
+print(long)
+"""
+
+# Programa 12
+"""
+numero = int(input("Ingresa un numero entero: "))
+caracter = str(input("Ingresa un caracter: "))
+
+generar_n_caracteres(numero, caracter)
 """
