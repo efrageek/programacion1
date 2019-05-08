@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Apr 17 20:12:41 2019
+Inteligencia Artificial
+Programaci'on 1
+Trabajo Pr'actico 2
 
-@author: Alumno
+Efrain Pineda
 """
 # ----------------------Aquí comienza el ejercicio 1----------------------------
 
