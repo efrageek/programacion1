@@ -144,7 +144,7 @@ def ejercicio3():
 
 def ejercicio4():
     n1 = float(input("Ingrese el primer numero: "))
-    n2 = float(input("Ingrese el primer numeri: "))
+    n2 = float(input("Ingrese el segundo numeri: "))
 
     if n1 > n2:
         print(f"{n1} es mayor que {n2}")
@@ -157,3 +157,151 @@ def ejercicio4():
 
 
 # -------------------------Aquí comienza el ejercicio 5-----------------------
+
+def ejercicio5():
+    n1 = float(input("Ingrese el primer numero: "))
+    n2 = float(input("Ingrese el segundo numero: "))
+    n3 = float(input("Ingrese el tercer numero: "))
+
+    if n1 > n2 and n1 == n3:
+        print(f"{n1} y {n3} son los numeros mayores")
+    elif n1 == n2 and n1 > n3:
+        print(f"{n1} y {n2} son los numeros mayores")
+    elif n2 == n3 and n2 > n1:
+        print(f"{n2} y {n3} son los numeros mayores")
+    elif n1 > n2 and n1 > n3:
+        print(f"{n1} es el numero mayor")
+    elif n2 > n1 and n2 > n3:
+        print(f"{n2} es el numero mayor")
+    elif n3 > n1 and n3 > 2:
+        print(f"{n3} es el numero mayor")
+    else:
+        print("Los numeros son iguales")
+
+# -------------------------Aquí termina el ejercicio 5-----------------------
+
+
+
+# -------------------------Aquí comienza el ejercicio 6-----------------------
+
+def ejercicio6():
+    caracter = input("Ingresa un caracter: ")
+
+    if caracter == "a" or caracter == "e" or caracter == "i" or caracter == "o" or caracter == "u":
+        print(f"'{caracter}' es una vocal.")
+    elif caracter == "A" or caracter == "E" or caracter == "I" or caracter == "O" or caracter == "U":
+        print(f"'{caracter}' es una vocal.")
+    else:
+        print(f"{caracter} no es una vocal.")
+
+# -------------------------Aquí termina el ejercicio 6-----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 7-----------------------
+
+def ejercicio7():
+    count = 0
+    while count < 100:
+        count += 1
+        print(f"El contador vale {count} en estos momentos")
+    else:
+        print("Ya hemos terminado de contar hasta 100")
+
+# -------------------------Aquí termina el ejercicio 7-----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 8----------------------
+
+def ejercicio8():
+    for i in range(101):
+        print(i)
+
+
+
+# -------------------------Aquí termina el ejercicio 8-----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 9----------------------
+
+def ejercicio9():
+    palabra = input("Ingresa una palabra: ")
+
+    for i in enumerate(palabra):
+        print(i)
+
+
+# -------------------------Aquí termina el ejercicio 9-----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 10---------------------
+
+
+def ejercicio10():
+    palabra = input("Ingresa una palabra: ")
+
+    for caracter in palabra:
+        print(caracter)
+
+
+# -------------------------Aquí termina el ejercicio 10----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 11---------------------
+
+def ejercicio11():
+    suma = 0
+    lista = [1, 2, 3, 4, 5]
+    for i in lista:
+        suma = suma + i
+
+    print(suma)
+
+# -------------------------Aquí termina el ejercicio 11----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 12---------------------
+
+
+def ejercicio12():
+    producto = 1
+    lista = [2, 4, 5]
+    for i in lista:
+        producto = producto * i
+
+    print(producto)
+
+# -------------------------Aquí termina el ejercicio 12----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 13---------------------
+
+def ejercicio13():
+    numero = int(input("Ingresa un numero entero: "))
+    print(f"Te vamos a mostrar {numero} asteriscos")
+    for i in range(numero):
+        print("*", end="")
+
+# -------------------------Aquí termina el ejercicio 13----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 14---------------------
+
+def ejercicio14():
+    numero = int(input("Ingresa un numero entero: "))
+    caracter = str(input("Ingresa un caracter: "))
+    print(f"Te vamos a mostrar '{caracter}' {numero} veces")
+    for i in range(numero):
+        print(caracter, end="")
+
+# -------------------------Aquí termina el ejercicio 14----------------------
+
+
+# -------------------------Aquí comienza el ejercicio 15---------------------
+
+def ejercicio15():
+    datos = [8, 1, 5]
+
+    for a in range(len(datos)):
+        for b in range(datos[a]):
+            print("*", end="")
+        print("")
