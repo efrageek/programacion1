@@ -1,0 +1,122 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr 24 19:55:35 2019
+Inteligencia Artificial
+Programación I
+Trabajo Práctico 3
+@author: Efraín Pineda
+"""
+
+
+# Funcion 1
+def suma(a, b):
+    return a + b
+
+
+# Función 2
+def resta(a, b):
+    if a > b:
+        c = a - b
+    else:
+        c = b - a
+    return c
+
+
+# Función 3
+def producto(a, b):
+    return a * b
+
+
+# función 4
+def maximo(a, b):
+    if a > b:
+        numero = a
+    if b > a:
+        numero = b
+    else:
+        print("Los numeros son iguales")
+
+    return numero
+
+
+# Funcion 5
+def minimo(a, b):
+    if a < b:
+        numero = a
+    if b < a:
+        numero = b
+    else:
+        print("Los numeros son iguales")
+
+    return numero
+
+
+# funcion 6
+def max_de_tres(a, b, c):
+    if a >= b and a >= c:
+        num = a
+    elif b >= a and b >= c:
+        num = b
+    elif c >= a and c >= b:
+        num = c
+    else:
+        print("Los números son iguales")
+    return num
+
+# Funcion 7
+
+def vocal(caracter):
+    if caracter == "a" or caracter == "e" or caracter == "i" or caracter == "o" or caracter == "u":
+        print("True")
+    elif caracter == "A" or caracter == "E" or caracter == "I" or caracter == "O" or caracter == "U":
+        print("True")
+    else:
+        print("False")
+
+
+# Programa ejercicio 1
+"""
+n1=float(input("Ingrese el valor uno: "))
+n2=float(input("Ingrese el valor dos: "))
+operacion=suma(n1,n2)
+print(f"El suma de los valores dados es igual a {operacion}")
+"""
+# Programa ejercicio 2
+"""
+numero1=float(input("Ingrese el valor uno: "))
+numero2=float(input("Ingrese el valor dos: "))
+resta_res=resta(numero1,numero2)
+print(f"El resultado es {resta_res}")
+"""
+# Programa ejercicio 3
+"""
+n1=float(input("Ingrese el valor uno: "))
+n2=float(input("Ingrese el valor dos: "))
+operacion=producto(n1,n2)
+print(f"El producto de los valores dados es igual a {operacion}")
+"""
+# Programa ejercicio 4
+"""
+n1=float(input("Ingrese el valor uno: "))
+n2=float(input("Ingrese el valor dos: "))
+n_mayor=maximo(n1,n2)
+
+print(f"El número mayor es {n_mayor}")
+"""
+# Programa Ejercicio 5
+"""
+n1=float(input("Ingrese el valor uno: "))
+n2=float(input("Ingrese el valor dos: "))
+n_menor=minimo(n1,n2)
+
+print(f"El número menor es {n_menor}")
+"""
+# Programa ejercicio 6
+"""
+n1 = float(input("Ingrese el valor uno: "))
+n2 = float(input("Ingrese el valor dos: "))
+n3 = float(input("Ingrese el valor dos: "))
+n_mayor_tres = max_de_tres(n1, n2, n3)
+
+print(f"El número mayor es {n_mayor_tres}")
+"""
